@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 interface NavbarProps {
   onSearch: (query: string) => void;
@@ -14,7 +14,8 @@ const Navbar: React.FC<NavbarProps> = ({
   };
 
   return (
-    <nav className="bg-blue-500 p-4 flex justify-between items-center flex-wrap w-full">
+    <div className='bg-blue-500 p-4 mx-auto'>
+    <nav className="flex justify-between items-center flex-wrap w-full">
       {/* Left side of navbar */}
       <div className="flex items-center space-x-3 flex-1">
         {/* Cryptocurrency heading */}
@@ -26,12 +27,12 @@ const Navbar: React.FC<NavbarProps> = ({
             Label text or value
           </label>
 
-          <div id='search' className='flex bg-white text-gray-800 rounded-md px-4 py-2 focus:outline-none w-[50%] ml-1'>
+          <div id='search' className='flex bg-white text-gray-800 rounded-md px-0 py-2 focus:outline-none w-[50%] ml-1'>
             <i className="material-icons" style={{ color: '#9CA3AF' }}>search</i>
             <input
                 type="text"
                 placeholder=" Search..."
-                className=""
+                className="max-w-20"
                 onChange={handleSearch}
             />
           </div>
@@ -71,6 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({
         
       </div>
     </nav>
+    </div>
   );
 };
 
