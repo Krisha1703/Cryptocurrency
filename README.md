@@ -1,3 +1,9 @@
+## Girl-Power-Talk-Internship-Assignment
+![Assignment image 1](/images/img1.png)
+![Assignment image 2](/images/img2.png)
+![Assignment image 3](/images/img3.png)
+![Assignment image 4](/images/img4.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
