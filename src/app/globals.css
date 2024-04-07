@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/*CSS Styles for Crypto Table -- Krisha*/
+
+/*Hovering effect for delete button*/
+#delete-icon:hover i,
+#delete-icon:hover p {
+  color: #EF4444; /* Change text color to red when parent is hovered */
+}
+
+/*Hovering effect for filter button*/
+#filter-icon:hover i,
+#filter-icon:hover p {
+  color: #9dfca0; /* Change text color to red when parent is hovered */
+}
+
+/*Hovering effect for export button*/
+#export-icon:hover{
+  background-color: aqua;
+}
+
+/*Hovering effect for adding CTA button*/
+#CTA-icon:hover{
+  background-color: aqua;
+}
+
+/*Resposnive Design For Navabar*/
+@media only screen and (max-width: 1200px){
+ #datalabel{
+  display: none;
+ }
+ #search{
+  width: 70%;
+ }
+}
+
+@media only screen and (max-width: 1100px){
+  #search{
+    width: 100%;
+   }
+}
+
+@media only screen and (max-width: 1000px){
+  #navbar-right{
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 520px){
+  #navbar-right{
+    display: block;
+  }
+  #delete-icon,#filter-icon,#CTA-icon,#export-icon{
+    margin-bottom: 5%;
+  }
+  #delete-icon{
+    margin-left: 4%;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  nav{
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+/*Resposnive Design For Table*/
+@media only screen and (max-width: 1100px){
+  #sort-icon{
+    display: none;
+   }
+}
+
+@media only screen and (max-width: 900px){
+  #market-cap{
+    word-wrap: break-word;
+   }
+}
+
+@media only screen and (max-width: 850px){
+  table{
+    font-size: 0.9em;
+   }
+
+}
+
+@media only screen and (max-width: 750px){
+  table{
+    font-size: 0.8em;
+   }
+  #rank{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+@media only screen and (max-width: 740px){
+  table{
+    font-size: 0.7em;
+   }
+  #market-cap,#market-cap-values{
+   display: none;
+  }
+}
+
+@media only screen and (max-width: 550px){
+   #price-btc,#price-btc-values{
+    display: none;
+   }
+   #percent-change,#price-usd{
+    padding-left: 1px;
+    padding-right: 1px;
+   }
+}
+
+@media only screen and (max-width: 450px){
+  #percent-change,#percent-change-values{
+   display: none;
+  }
+}
+
+#bar-chart{
+  width: 50%;
+  margin: 0% auto;
+}
+
+h2{
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+/*Responsive Design For Chart*/
+@media only screen and (max-width: 700px){
+  #bar-chart{
+    width: 90%;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  #bar-chart{
+    width: 80%;
+  }
+  h2{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  #bar-chart{
+    width: 65%;
+  }
+  h2{
+    font-size: 0.8rem;
+  }
+}
+
