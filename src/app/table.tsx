@@ -163,10 +163,10 @@ const DisplayTable: React.FC<DisplayTableProps> = ({ cryptos, perPage }) => {
                   {checkedIds.includes(crypto.id) ? 'check_box' : 'check_box_outline_blank'}
                 </i>
               </td>
-              <td className="border-2 px-4 py-2 border-white">{crypto.id}</td>
-              <td className="border-2 px-4 py-2 border-white">{crypto.name}</td>
-              <td className="border-2 px-4 py-2 border-white">{crypto.rank}</td>
-              <td className="border-2 px-4 py-2 border-white">${crypto.price_usd}</td>
+              <td className="border-2 px-4 py-2 border-white" id='id-values'>{crypto.id}</td>
+              <td className="border-2 px-4 py-2 border-white" id='name-vlaues'>{crypto.name}</td>
+              <td className="border-2 px-4 py-2 border-white" id='rank-values'>{crypto.rank}</td>
+              <td className="border-2 px-4 py-2 border-white" id='price-usd-values'>${crypto.price_usd}</td>
               <td className="border-2 px-4 py-2 border-white" id='percent-change-values'>{crypto.percent_change_24h}%</td>
               <td className="border-2 px-4 py-2 border-white" id='price-btc-values'>${crypto.price_btc}</td>
               <td className="border-2 px-4 py-2 border-white" id='market-cap-values'>${crypto.market_cap_usd}</td>
