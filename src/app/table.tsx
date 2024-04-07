@@ -130,22 +130,22 @@ const DisplayTable: React.FC<DisplayTableProps> = ({ cryptos, perPage }) => {
             <th className="border-2 px-4 py-2 cursor-pointer" onClick={() => sortTableByColumn('id')}>
               ID <SortIcon sorted={sortBy === 'id'} ascending={sortAscending} />
             </th>
-            <th className="border-2 px-2 py-2 cursor-pointer" onClick={() => sortTableByColumn('name')}>
+            <th className="border-2 px-2 py-2 cursor-pointer" id='name' onClick={() => sortTableByColumn('name')}>
               Name <SortIcon sorted={sortBy === 'name'} ascending={sortAscending} />
             </th>
-            <th className="border-2 px-6 py-2 cursor-pointer" onClick={() => sortTableByColumn('rank')}>
+            <th className="border-2 px-6 py-2 cursor-pointer" id='rank' onClick={() => sortTableByColumn('rank')}>
               Rank <SortIcon sorted={sortBy === 'rank'} ascending={sortAscending} />
             </th>
-            <th className="border-2 px-5 py-2 cursor-pointer" onClick={() => sortTableByColumn('price_usd')}>
+            <th className="border-2 px-5 py-2 cursor-pointer" id='price-usd' onClick={() => sortTableByColumn('price_usd')}>
               Price (USD) <SortIcon sorted={sortBy === 'price_usd'} ascending={sortAscending} />
             </th>
-            <th className="border-2 px-4 py-2 cursor-pointer" onClick={() => sortTableByColumn('percent_change_24h')}>
+            <th className="border-2 px-4 py-2 cursor-pointer" id='percent-change' onClick={() => sortTableByColumn('percent_change_24h')}>
               Percent Change (24h) <SortIcon sorted={sortBy === 'percent_change_24h'} ascending={sortAscending} />
             </th>
-            <th className="border-2 px-6 py-2 cursor-pointer" onClick={() => sortTableByColumn('price_btc')}>
+            <th className="border-2 px-6 py-2 cursor-pointer" id='price-btc' onClick={() => sortTableByColumn('price_btc')}>
               Price (BTC) <SortIcon sorted={sortBy === 'price_btc'} ascending={sortAscending} />
             </th>
-            <th className="border-2 px-4 py-2 cursor-pointer" onClick={() => sortTableByColumn('market_cap_usd')}>
+            <th className="border-2 px-4 py-2 cursor-pointer" id='market-cap' onClick={() => sortTableByColumn('market_cap_usd')}>
               Market Cap (USD) <SortIcon sorted={sortBy === 'market_cap_usd'} ascending={sortAscending} />
             </th>
           </tr>
@@ -167,9 +167,9 @@ const DisplayTable: React.FC<DisplayTableProps> = ({ cryptos, perPage }) => {
               <td className="border-2 px-4 py-2 border-white">{crypto.name}</td>
               <td className="border-2 px-4 py-2 border-white">{crypto.rank}</td>
               <td className="border-2 px-4 py-2 border-white">${crypto.price_usd}</td>
-              <td className="border-2 px-4 py-2 border-white">{crypto.percent_change_24h}%</td>
-              <td className="border-2 px-4 py-2 border-white">${crypto.price_btc}</td>
-              <td className="border-2 px-4 py-2 border-white">${crypto.market_cap_usd}</td>
+              <td className="border-2 px-4 py-2 border-white" id='percent-change-values'>{crypto.percent_change_24h}%</td>
+              <td className="border-2 px-4 py-2 border-white" id='price-btc-values'>${crypto.price_btc}</td>
+              <td className="border-2 px-4 py-2 border-white" id='market-cap-values'>${crypto.market_cap_usd}</td>
             </tr>
           ))}
         </tbody>
