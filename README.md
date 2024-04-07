@@ -1,10 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+```bash<img width="945" alt="img1" src="https://github.com/Krisha1703/Girl-Power-Talk/assets/128887746/b3b80692-886b-4a79-aa02-466fb8fa21d2">
+<img width="941" alt="img2" src="https://github.com/Krisha1703/Girl-Power-Talk/assets/128887746/96313da3-ec81-46ae-b150-6925db9a83db">
+<img width="152" alt="img4" src="https://github.com/Krisha1703/Girl-Power-Talk/assets/128887746/fcb7720a-f3ca-424e-b9e4-71ca5fe4a723">
+<img width="942" alt="img3" src="https://github.com/Krisha1703/Girl-Power-Talk/assets/128887746/70359c99-3c78-423c-a67b-4fabcbd1cd7c">
 
 ## Getting Started
 
 First, run the development server:
 
-```bash
 npm run dev
 # or
 yarn dev
