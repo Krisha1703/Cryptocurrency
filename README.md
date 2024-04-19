@@ -1,4 +1,4 @@
-## Girl-Power-Talk-Internship-Assignment
+## Cryptocurrency
 ![Assignment image 1](https://github.com/Krisha1703/Girl-Power-Talk/blob/master/src/app/images/img1.png)
 ![Assignment image 2](https://github.com/Krisha1703/Girl-Power-Talk/blob/master/src/app/images/img2.png)
 ![Assignment image 3](https://github.com/Krisha1703/Girl-Power-Talk/blob/master/src/app/images/img3.png)
